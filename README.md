@@ -1,1 +1,1 @@
-## Rufus de Sol Fan Page
+## Rufus Du Sol Fanpage
