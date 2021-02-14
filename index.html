@@ -3,6 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+
     
     <title>Rufus Du Sol Fanpage</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -10,6 +75,23 @@
   </head>
 
   <body>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="https://www.rufusdusol.com/">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">Connect
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://music.apple.com/us/artist/799587823?uo=4&app=music&at=1010lKm9&lId=2692490&cId=none&sr=2&src=Linkfire&itscg=30440&itsct=catchall_p2&ct=LFV_3cdd26fcf44f17345c87edeac56c895a&ls=1">Apple Music</a>
+          <a href="https://www.instagram.com/rufusdusol/">Instagram</a>
+          <a href="spotify:artist:5Pb27ujIyYb33zBqVysBkj">Spotify</a>
+          <a href="https://soundcloud.com/rufusdusol">Soundcloud</a>
+          <a href="https://twitter.com/rufusdusol">Twitter</a>
+
+        </div>
+      </div>
+    </div>
     <section class="hero">
       <div class="hero-content">
         <h1 class = "hero-title"> Rufus Du Sol Fan Page!</h1>
@@ -17,46 +99,67 @@
           Rufus Du Sol is an Australian alternative dance group from Sydney, Australia. 
           The music group that established themselves in 2010 features Tyrone Lindqvist as lead guitarist, Jon George on keyboard, and drummer James Hunt. 
         </h2> 
+
+        <button type = "button" class="hero-button" onclick="location.href='https://www.youtube.com/watch?v=WNLYZQuTCE8&feature=emb_logo'" target="_blank">Listen Now</button>
       </div>
     </section>
 
     <main>
-
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <a  style = "color:midnightblue" href="spotify:artist:5Pb27ujIyYb33zBqVysBkj" target="_blank">Follow Rufus Du Sol on Spotify!</a>
-
-
-
+      <div class="card">
+            
+        <ul class = "album-titles"> 
+            <li><a  class = "album-titles" href="spotify:album:5OcHrujEkMm1x4FSihxTgv" target="_blank">Live From Joshua Tree</a></li>
+            <li><a  class = "album-titles" href="spotify:album:5Jazpq8mEgSgQs06mdwkQd" target="_blank">Solace</a></li>
+            <li><a  class = "album-titles" href="spotify:album:4xxkZCrb0e2oKqIrzGHPLk" target="_blank">Solace Remixed</a></li>
+            <li><a  class = "album-titles" href="spotify:album:24RePoFOeCSnYHsFpxYD2W" target="_blank">Atlas</a></li>
+        </ul>
+      </div>
+      
+        <div class="row"><h2 class = "title">ALBUMS</h2>
+        <div class="column column s12 m4 l4">
+          <div class="card-hotizontal">
+            <h3 class = "favorite-song">Solace Remixed</h3>
+            <iframe src="https://open.spotify.com/embed/album/4xxkZCrb0e2oKqIrzGHPLk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <h2>ALBUMS</h2>
-            <ul class = "album-titles"> 
-                <li><a  class = "album-titles" href="spotify:album:5OcHrujEkMm1x4FSihxTgv" target="_blank">Live From Joshua Tree</a></li>
-                <li><a  class = "album-titles" href="spotify:album:5Jazpq8mEgSgQs06mdwkQd" target="_blank">Solace</a></li>
-                <li><a  class = "album-titles" href="spotify:album:4xxkZCrb0e2oKqIrzGHPLk" target="_blank">Solace Remixed</a></li>
-                <li><a  class = "album-titles" href="spotify:album:24RePoFOeCSnYHsFpxYD2W" target="_blank">Atlas</a></li>
-            </ul>
+        <div class="column s12 m12 l4">
+          <div class="card-hotizontal">
+            <h3 class = "favorite-song">Joshua Tree</h3>
+              <iframe src="https://open.spotify.com/embed/album/5OcHrujEkMm1x4FSihxTgv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <h3 class = "favorite-song">FAVORITE SONG</h3>
-              <iframe src="https://open.spotify.com/embed/track/5ZvHcR4OSwvEV5IhigbTOT" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <a style = "color:midnightblue" href="https://store.sound-merch.com.au/collections/rufus-du-sol" target="_blank">Rufus De Sol Merchendise Store</a>
-          </div>
+        <div class="column s12 m4 l4">
+            <div class="card-hotizontal">
+              <h3 class = "favorite-song">Bloom</h3>
+              <iframe src="https://open.spotify.com/embed/album/0gIAWTyvnOntQSd3yxyiW5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
         </div>
       </div>
+    
+      </div>
+    
+    <div class="merch-store">
+      <a style = "color:midnightblue" href="https://store.sound-merch.com.au/collections/rufus-du-sol" target="_blank">Rufus De Sol Merchendise Store</a>
+    </div>
 
     </main>
-   
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
   </body>
 </html>
