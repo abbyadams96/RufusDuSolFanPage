@@ -1,0 +1,29 @@
+var userSubmittedData = function (event) {
+  event.preventDefault();
+  // remove ".hide" class from the two page-break divs and the sections for wrokout and nutrition
+  workoutContainer.classList.remove("hide");
+  nutritionContainer.classList.remove("hide");
+  btwnHeroWorkout.classList.remove("hide");
+  btwnWorkoutNutrition.classList.remove("hide");
+  var userInputFeet = feet.value;
+  var userInputInches = inches.value;
+  var name = firstName.value;
+
+  // Want to stop at each page and increment with every click
+  // i++ with each click
+  //local storage through an array
+  // Save email and password to localStorage using `setItem()`
+  function renderLastRegistered() {
+    // Retrieve the last email and password from localStorage using `getItem()`
+    // NEED TO SAVE AN ARRAY OF HIGHSCORES
+    // json.stringify array when setting item
+    // json.parse it when getting item out
+    var highscores = localStorage.getItem("highscores") || []; // if looking at highscores and doesnt exist -> set to an array
+    var password = localStorage.getItem("password");
+
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+    // Render the last registered email and password
+    renderLastRegistered();
+  }
+};
