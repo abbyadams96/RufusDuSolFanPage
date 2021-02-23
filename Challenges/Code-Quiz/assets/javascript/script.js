@@ -1,3 +1,20 @@
+//Target button
+var startQuiz = document.getElementById("startBtn");
+var timeLeftel = document.getElementById("timeLeft");
+startQuiz.addEventListener("click", function () {
+  console.log("startQuiz"); // comment out later
+  timer();
+});
+
+var timeLeft = 5;
+var timer = setInterval(function () {
+  if (timeLeft )// 
+  timeLeftel.innerText = timeLeft; // updating html everytime time changes
+  timeLeft--;
+
+  console.log(timeLeft);
+}, 1000);
+
 var userSubmittedData = function (event) {
   event.preventDefault();
   // remove ".hide" class from the two page-break divs and the sections for wrokout and nutrition
